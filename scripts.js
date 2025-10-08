@@ -14,7 +14,6 @@ const handleFormSubmit = function (e) {
 
   const valoreInput = input.value;
 
-  // 3) confermiamo intanto tutto con un console.log
   console.log(input);
 
   const card = document.createElement("div");
