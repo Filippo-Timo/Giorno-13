@@ -1,26 +1,3 @@
-// const form = document.getElementById("main-form");
-// const handleFormSubmit = function (e) {
-//   form.addEventListener("submit", function (e) {
-//     e.preventDefault();
-//   });
-
-//   const input = document.getElementById("main-input");
-
-//   const valoreInput = input.value;
-
-//   const lista = document.getElementById("lista");
-
-//   const card = document.createElement("div");
-
-//   card.innerHTML = `
-//         <p>${valoreInput}</p>
-//         <button onclick="deleteCard(event)">ELIMINA</button>
-//     `;
-
-//   const container = document.getElementById("lista");
-//   container.appendChild(card);
-// };
-
 const form = document.getElementById("main-form");
 
 const deleteCard = function (e) {
@@ -42,7 +19,7 @@ const handleFormSubmit = function (e) {
 
   const card = document.createElement("div");
   card.innerHTML = `
-        <p>${input}</p>
+        <p>${input.value}</p>
         <button onclick="deleteCard(event)">X</button>
     `;
   const container = document.getElementById("lista");
